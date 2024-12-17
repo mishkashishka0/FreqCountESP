@@ -174,7 +174,7 @@ void _FreqCountESP::end()
   if(mTriggerPin == 0) {
     timerDetachInterrupt(mTimer);
     timerEnd(mTimer);
-    timer = NULL;
+    mtimer = NULL;
   } else {
     detachInterrupt(digitalPinToInterrupt(mTriggerPin));
   }
